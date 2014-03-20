@@ -1,4 +1,6 @@
-var bracketUrl = "http://ncupsaa.mayhem.cbssports.com/brackets/2/7";
+/* Export CBS bracket data to json */
+
+var bracketUrl = "";
 
 // Create iFrame
 $i = $("<iframe src='"+bracketUrl+">").appendTo('body');
