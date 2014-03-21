@@ -12,6 +12,8 @@ function ParseStandings() {
 		left: "0",
 		width: "100%",
 		height: "700px",
+		overflow: "auto",
+		"white-space": "nowrap",
 		"z-index": "999999"
 	});
 	$("body").append($output);
