@@ -36,6 +36,7 @@ $i.load( function(){
 	}
 	
 	champion = new Node( "winningTeamPick" );
+	champion.Score = $("#finalGameScoreTxt").val();
 	champion.Top = new Node( "5-6-1-Top" );
 	champion.Top.Top = new Node( "5-5-1-Top" );
 	champion.Top.Bottom = new Node( "5-5-1-Bottom" );
