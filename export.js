@@ -3,7 +3,7 @@
 var bracketUrl = "";
 
 // Create iFrame
-$i = $("<iframe src='"+bracketUrl+">").appendTo('body');
+$i = $("<iframe src='"+bracketUrl+"'>").appendTo('body');
 
 var champion = false;
 
