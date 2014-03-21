@@ -64,7 +64,7 @@ function ParsePlayer(playerIndex) {
 		}
 		
 		root = new Node( "winningTeamPick" );
-		root.Score = $("#finalGameScoreTxt").val();
+		root.Score = $i.get(0).contentWindow.jQuery("#finalGameScoreTxt").val();
 		root.Top = new Node( "5-6-1-Top" );
 		root.Top.Top = new Node( "5-5-1-Top" );
 		root.Top.Bottom = new Node( "5-5-1-Bottom" );
@@ -79,9 +79,9 @@ function ParsePlayer(playerIndex) {
 		
 		$i.remove();
 
-		var json = JSON.stringify(root).replace(/[']/, "\'");
+		var json = JSON.stringify(root).replace(/[']/, "\\'");
 
-		$("#output").val( $("#output").val()+"$brackets['"+name+"'] = '"+json+"';\n");
+		$("#output").val( $("#output").val()+"$brackets['"+name+"'] = json_decode('"+json+"',1);\n");
 		
 		ParsePlayer(playerIndex+1);
 	});
